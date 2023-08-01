@@ -44,7 +44,7 @@ def scrape_char_info(character_name):
         return None
     
 def main():
-    characters_to_scrape = ["Monkey D. Luffy", "Roronoa Zoro", "Nami", "Usopp", "Sanji", "Tony Tony Chopper"]
+    characters_to_scrape = ["Monkey D. Luffy", "Roronoa Zoro", "Nami", "Usopp", "Sanji", "Tony Tony Chopper", "Nico Robin", "Jinbe", "Franky", "Brook"]
     character_info_list = []
 
     for character in characters_to_scrape:
@@ -58,7 +58,6 @@ def main():
         writer = csv.DictWriter(csvfile,fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(character_info_list)
-
 
 if __name__ == "__main__":
     main()
